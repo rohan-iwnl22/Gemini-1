@@ -1,2 +1,1 @@
-# Gemini
-GEmini using API 
+# Rohan gay
