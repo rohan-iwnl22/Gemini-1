@@ -27,20 +27,39 @@ const Main = () => {
 
   const keywordLinks = {
     web: [
-      { text: "test-1", url: "https://www.google.com" },
       {
-        text: "Top Road Trip Destinations",
-        url: "https://example.com/top-road-trip-destinations",
+        text: "Reddit : r/webdev",
+        url: "https://www.reddit.com/r/webdev/?rdt=62227",
+      },
+      {
+        text: "Reddit : r/Web Development",
+        url: "https://www.reddit.com/r/webdevelopment/",
+      },
+      {
+        text: "Reddit : r/Web Development",
+        url: "https://www.reddit.com/r/webdevelopment/",
+      },
+      {
+        text: "Twitter : r/Web Development",
+        url: "https://www.reddit.com/r/webdevelopment/",
+      },
+      {
+        text: "Twitter : r/Web Development",
+        url: "https://www.reddit.com/r/webdevelopment/",
+      },
+      {
+        text: "Twitter : r/Web Development",
+        url: "https://www.reddit.com/r/webdevelopment/",
       },
     ],
-    App: [
+    app: [
       {
-        text: "Urban Planning Basics",
-        url: "https://example.com/urban-planning-basics",
+        text: "Reddit r/developer",
+        url: "https://www.reddit.com/r/developer/",
       },
       {
-        text: "Urban Planning Strategies",
-        url: "https://example.com/urban-planning-strategies",
+        text: "Reddit r/appdev",
+        url: "https://www.reddit.com/r/appdev/",
       },
     ],
   };
@@ -68,10 +87,14 @@ const Main = () => {
               Also Checkout
             </AccordionSummary>
             <AccordionDetails>
-              <ul>
+              <ul style={{ listStyle: "none" }}>
                 {notification.link.map((link, index) => (
                   <li key={index}>
-                    <a href={link.url} target="_blank">
+                    <a
+                      style={{ textDecoration: "none" }}
+                      href={link.url}
+                      target="_blank"
+                    >
                       {link.text}
                     </a>
                   </li>
@@ -88,7 +111,7 @@ const Main = () => {
   return (
     <div className={`main ${darkMode ? "dark-mode" : ""}`}>
       <div className="nav">
-        <p>Gemini</p>
+        <p>KARP</p>
         <div className="noti">
           {renderNotifications()} {/* Render notifications here */}
           {darkMode ? (
