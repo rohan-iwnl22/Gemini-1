@@ -36,20 +36,16 @@ const Main = () => {
         url: "https://www.reddit.com/r/webdevelopment/",
       },
       {
-        text: "Reddit : r/Web Development",
-        url: "https://www.reddit.com/r/webdevelopment/",
+        text: "DEV community",
+        url: "https://twitter.com/thepracticaldev?lang=en",
       },
       {
-        text: "Twitter : r/Web Development",
-        url: "https://www.reddit.com/r/webdevelopment/",
+        text: "Six Revisions by WebFX",
+        url: "https://twitter.com/sixrevisions",
       },
       {
-        text: "Twitter : r/Web Development",
-        url: "https://www.reddit.com/r/webdevelopment/",
-      },
-      {
-        text: "Twitter : r/Web Development",
-        url: "https://www.reddit.com/r/webdevelopment/",
+        text: "Full Stack Developers Community",
+        url: "https://twitter.com/fullcommunity?lang=en",
       },
     ],
     app: [
@@ -60,6 +56,98 @@ const Main = () => {
       {
         text: "Reddit r/appdev",
         url: "https://www.reddit.com/r/appdev/",
+      },
+    ],
+    machine: [
+      {
+        text: "r/Machine Learning",
+        url: "https://www.reddit.com/r/MachineLearning/?rdt=44338",
+      },
+      {
+        text: "r/learnmachinelearning",
+        url: "https://www.reddit.com/r/learnmachinelearning/",
+      },
+      {
+        text: "r/MLQuestions",
+        url: "https://www.reddit.com/r/MLQuestions/",
+      },
+      {
+        text: "r/deeplearning",
+        url: "https://www.reddit.com/r/deeplearning/",
+      },
+      {
+        text: "r/machinelearningnews",
+        url: "https://www.reddit.com/r/machinelearningnews/",
+      },
+      {
+        text: "For Datasets",
+        url: "https://www.reddit.com/r/datasets/",
+      },
+    ],
+    science: [
+      {
+        text: "For Datasets",
+        url: "https://www.reddit.com/r/datasets/",
+      },
+      {
+        text: "r/datascience",
+        url: "https://www.reddit.com/r/datascience/",
+      },
+      {
+        text: "r/learndatascience",
+        url: "https://www.reddit.com/r/learndatascience/",
+      },
+      {
+        text: "r/visualization",
+        url: "https://www.reddit.com/r/visualization/",
+      },
+      {
+        text: "r/dataanalysis",
+        url: "https://www.reddit.com/r/dataanalysis/",
+      },
+    ],
+    devops: [
+      {
+        text: "r/hashicorp",
+        url: "https://www.reddit.com/r/hashicorp/",
+      },
+      {
+        text: "r/ansible",
+        url: "https://www.reddit.com/r/ansible/",
+      },
+      {
+        text: "r/docker",
+        url: "https://www.reddit.com/r/docker/",
+      },
+      {
+        text: "r/kubernetes",
+        url: "https://www.reddit.com/r/kubernetes/",
+      },
+    ],
+    cyber: [
+      {
+        text: "r/cybersecurity",
+        url: "https://www.reddit.com/r/cybersecurity/",
+      },
+      {
+        text: "r/netsec",
+        url: "https://www.reddit.com/r/netsec/",
+      },
+      {
+        text: "r/hacking",
+        url: "https://www.reddit.com/r/hacking/",
+      },
+      {
+        text: "r/AskNetsec",
+        url: "https://www.reddit.com/r/AskNetsec/",
+      },
+      {
+        text: "r/Information_Security",
+        url: "https://www.reddit.com/r/Information_Security/",
+      },
+      {
+        text: "r/ReverseEngineering",
+        url: "https://www.reddit.com/r/ReverseEngineering/",
       },
     ],
   };
@@ -84,14 +172,17 @@ const Main = () => {
               aria-controls="panel1-content"
               id="panel1-header"
             >
-              Also Checkout
+              For more updates regarding the community also checkout....
             </AccordionSummary>
             <AccordionDetails>
               <ul style={{ listStyle: "none" }}>
                 {notification.link.map((link, index) => (
                   <li key={index}>
                     <a
-                      style={{ textDecoration: "none" }}
+                      style={{
+                        textDecoration: "none",
+                        fontFamily: "Open Sans",
+                      }}
                       href={link.url}
                       target="_blank"
                     >
@@ -185,7 +276,7 @@ const Main = () => {
               onChange={(e) => setInput(e.target.value)}
               value={input}
               type="text"
-              placeholder="Enter a prompt here"
+              placeholder="Enter a prompt here (refrain from using shortforms such as DS,ML,etc.)"
             />
             <div>
               <img src={assets.gallery_icon} alt="" />
